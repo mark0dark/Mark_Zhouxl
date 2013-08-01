@@ -39,12 +39,12 @@
         /*改变大小*/
         UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         button.frame = CGRectMake(CGRectGetMaxX(_slider.frame)+30, CGRectGetMinY(_slider.frame), 80, 30);
-        [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         _distance = 100;
         
-        
-        
+        /*SYEvent 初始化,类方法*/
+        self.moveLabel = [SYEvent createOnHost:self];
     }
     return self;
 }
@@ -55,10 +55,11 @@
     _title.frame = CGRectMoveToX(_title.frame, sender.value);
     NSLog(@"%@",_title);
 }
-- (void)buttonPressed
+- (void)buttonPressed:(UIButton *)sender
 {
     /*y方向移动Y的距离*/
     _subTitle.frame = CGRectMoveY(_subTitle.frame, _isChange?-_distance:_distance);
     _isChange = !_isChange;
+    [self.moveLabel invoke:sender args:_subTitle];
 }
 @end

@@ -17,8 +17,9 @@
 		F94BE40317A2035500963A3B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F94BE40217A2035500963A3B /* Default@2x.png */; };
 		F94BE40517A2035500963A3B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F94BE40417A2035500963A3B /* Default-568h@2x.png */; };
 		F94BE40D17A203C500963A3B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BE40C17A203C500963A3B /* RootViewController.m */; };
-		F94BE41017A203F400963A3B /* RectView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BE40F17A203F400963A3B /* RectView.m */; };
-		F94BE41317A2082800963A3B /* NSObject+CGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = F94BE41217A2082800963A3B /* NSObject+CGRect.m */; };
+		F969D7DA17A9FC9200406B33 /* NSObject+CGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = F969D7D917A9FC9200406B33 /* NSObject+CGRect.m */; };
+		F969D7DD17A9FD1200406B33 /* RectView.m in Sources */ = {isa = PBXBuildFile; fileRef = F969D7DC17A9FD1200406B33 /* RectView.m */; };
+		F969D7E117A9FD3D00406B33 /* SYEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F969D7E017A9FD3D00406B33 /* SYEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +38,12 @@
 		F94BE40417A2035500963A3B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F94BE40B17A203C500963A3B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F94BE40C17A203C500963A3B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		F94BE40E17A203F400963A3B /* RectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectView.h; sourceTree = "<group>"; };
-		F94BE40F17A203F400963A3B /* RectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectView.m; sourceTree = "<group>"; };
-		F94BE41117A2082800963A3B /* NSObject+CGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CGRect.h"; sourceTree = "<group>"; };
-		F94BE41217A2082800963A3B /* NSObject+CGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CGRect.m"; sourceTree = "<group>"; };
+		F969D7D817A9FC9200406B33 /* NSObject+CGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CGRect.h"; sourceTree = "<group>"; };
+		F969D7D917A9FC9200406B33 /* NSObject+CGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CGRect.m"; sourceTree = "<group>"; };
+		F969D7DB17A9FD1200406B33 /* RectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectView.h; sourceTree = "<group>"; };
+		F969D7DC17A9FD1200406B33 /* RectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectView.m; sourceTree = "<group>"; };
+		F969D7DF17A9FD3D00406B33 /* SYEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYEvent.h; sourceTree = "<group>"; };
+		F969D7E017A9FD3D00406B33 /* SYEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +94,8 @@
 				F94BE3FE17A2035500963A3B /* AppDelegate.m */,
 				F94BE40B17A203C500963A3B /* RootViewController.h */,
 				F94BE40C17A203C500963A3B /* RootViewController.m */,
-				F94BE40E17A203F400963A3B /* RectView.h */,
-				F94BE40F17A203F400963A3B /* RectView.m */,
-				F94BE41117A2082800963A3B /* NSObject+CGRect.h */,
-				F94BE41217A2082800963A3B /* NSObject+CGRect.m */,
+				F969D7DE17A9FD3D00406B33 /* event */,
+				F969D7D717A9FC9200406B33 /* CGRect */,
 				F94BE3F517A2035500963A3B /* Supporting Files */,
 			);
 			path = Mark_zhouxl;
@@ -112,6 +113,26 @@
 				F94BE40417A2035500963A3B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F969D7D717A9FC9200406B33 /* CGRect */ = {
+			isa = PBXGroup;
+			children = (
+				F969D7DB17A9FD1200406B33 /* RectView.h */,
+				F969D7DC17A9FD1200406B33 /* RectView.m */,
+				F969D7D817A9FC9200406B33 /* NSObject+CGRect.h */,
+				F969D7D917A9FC9200406B33 /* NSObject+CGRect.m */,
+			);
+			path = CGRect;
+			sourceTree = "<group>";
+		};
+		F969D7DE17A9FD3D00406B33 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				F969D7DF17A9FD3D00406B33 /* SYEvent.h */,
+				F969D7E017A9FD3D00406B33 /* SYEvent.m */,
+			);
+			path = event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +203,9 @@
 				F94BE3FB17A2035500963A3B /* main.m in Sources */,
 				F94BE3FF17A2035500963A3B /* AppDelegate.m in Sources */,
 				F94BE40D17A203C500963A3B /* RootViewController.m in Sources */,
-				F94BE41017A203F400963A3B /* RectView.m in Sources */,
-				F94BE41317A2082800963A3B /* NSObject+CGRect.m in Sources */,
+				F969D7DA17A9FC9200406B33 /* NSObject+CGRect.m in Sources */,
+				F969D7DD17A9FD1200406B33 /* RectView.m in Sources */,
+				F969D7E117A9FD3D00406B33 /* SYEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +318,7 @@
 				F94BE40A17A2035500963A3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

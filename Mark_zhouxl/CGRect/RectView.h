@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NSObject+CGRect.h"
+#import "SYEvent.h"
 @interface RectView : UIView
 {
     UISlider*       _slider;
@@ -17,4 +18,6 @@
     CGFloat         _distance;
     BOOL            _isChange;
 }
+/*SYEvent 必须是属性*/
+@property (nonatomic,retain) SYEvent*   moveLabel;
 @end

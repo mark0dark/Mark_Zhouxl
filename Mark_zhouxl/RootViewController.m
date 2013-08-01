@@ -27,9 +27,14 @@
 {
     [super viewDidLoad];
 	RectView* rectView = [[RectView alloc] initWithFrame:self.view.bounds];
+    /*SYEvent 响应方法*/
+    [rectView.moveLabel addSYEvent:self handle:@selector(SYEvent:agrs:)];
     [self.view addSubview:rectView];
 }
-
+- (void)SYEvent:(id)sender agrs:(id)agrs
+{
+    NSLog(@"%@  ===== %@",sender,agrs);
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
